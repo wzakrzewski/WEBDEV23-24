@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(97, 97, 97);
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+.full-content {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    margin: auto;
+    width: 63%;
+
+}
+
+.contact-info {
+    display: flex;
+}   
+
+.telephone-number {
+    display: flex;
+}
+
+.email {
+    margin-left: 1em;
+    display: flex;
+}
+
+.bold {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.github {
+    margin-left: 1em;
+    display: flex;
+}
+
+.linkedin {
+    margin-left: 1em;
+    display: flex;
+}
+
+.italic-text {
+    font-style: oblique;
+}
+
+.contact-text {
+    padding-top: 1px;
+    font-size: 18px;
+}
