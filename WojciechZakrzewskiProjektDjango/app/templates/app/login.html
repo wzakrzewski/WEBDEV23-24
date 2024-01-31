@@ -1,0 +1,17 @@
+{% extends 'app/index.html' %}
+
+{% block content %}
+
+
+<h1>Login</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input class="login-button" type="submit" value="Login">
+
+</form>
+
+<p class = "basic-text">No account?<a class = "logout-button" href="{% url 'register' %}">Register</a></p>
+
+{% endblock content %}

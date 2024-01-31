@@ -1,0 +1,12 @@
+{% extends 'app/index.html' %}
+
+{% block content %}
+
+<a href="{% url 'todolist' %}">Back</a>
+<form method="POST">
+    {% csrf_token %}
+    <p class="basic-text">Are you sure? {{Object}}</p>
+    <input class="login-button" type="submit" value="Delete">
+</form>
+
+{% endblock content %}

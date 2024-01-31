@@ -1,0 +1,44 @@
+{% extends 'app/index.html' %}
+
+{% block content %}
+
+<div class="menu">
+    
+    <div>
+        <h1 class="todolisttext">To Do List</h1>
+        <p class="basic-text">User: {{request.user}}</p>
+        <a href="{% url 'createitem' %}">Add a task</a>
+    </div>
+
+    <div>
+
+        <p class="basic-text">Your tasks:</p>
+        
+        <table class="basic-text">
+            
+            {% for item in object_list %}
+            <tr>
+                <td>{{item.name}}</td>
+                <td ><a href="{% url 'updateitem' item.id %}">Edit</a></td>
+                <td><a href="{% url 'deleteitem' item.id %}">Delete</a></td>
+            </tr>
+            {% empty %}
+            <h3 class="basic-text">No items</h3>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div>
+        {% if request.user.is_authenticated %}
+        <div class="logclass">
+            <a class="logout-button" href="{% url 'logout' %}">Logout</a>
+            {% else %}
+            <a class="logout-button" href="{% url 'login' %}">Login</a>    
+            {% endif %}
+        </div>
+        
+    </div>
+
+</div>
+
+{% endblock content %}

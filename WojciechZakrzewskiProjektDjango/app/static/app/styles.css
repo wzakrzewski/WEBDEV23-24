@@ -1,0 +1,108 @@
+
+body::before {
+    content: "";
+    z-index: -1;
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    width: inherit;
+    height: inherit;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+.logclass {
+    padding-top: 15px;
+}
+
+.todolisttext {
+    margin-bottom: -20px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 50px;
+}
+
+body {
+    background: url(background.jpg); 
+    background-size: 0 0; 
+    width: 100%;
+    height: 100%;
+    position: fixed; 
+    font-family: Mukta;
+
+}
+
+
+.container {
+    border-radius: 15px;
+    padding: 20px;
+    padding-left: 15px;
+    background-color: rgba(243, 243, 255, 0.918);
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    
+}
+
+.basic-text {
+    font-family: Mukta;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold ;
+    color: #4E9CAF;
+    font-size: 20px;
+    padding-left: 3px;
+}
+
+.menu {
+    font-size: 10px;
+}
+
+input {
+    font-size: inherit;
+    font-family: inherit;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+
+}
+
+form {
+    margin-top: -10px;
+}
+
+.login-button {
+    background: #4E9CAF;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 115px;
+    height: 25px;
+}
+
+.logout-button {
+    text-decoration: none;
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 20px;
+
+}
